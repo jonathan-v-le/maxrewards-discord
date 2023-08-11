@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -31,5 +32,6 @@ async def on_raw_reaction_add(payload):
         member = discord.utils.get(guild.members, id=payload.user_id)
         
         await member.add_roles(role)
-
-bot.run('TOKEN')
+      
+my_secret = os.environ['TOKEN']
+bot.run(my_secret)
