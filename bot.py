@@ -32,4 +32,4 @@ async def on_raw_reaction_add(payload):
         
         await member.add_roles(role)
 
-bot.run('MTEzNjg3MTk3NjUwMjMxNzA2Ng.GFBpLU.sfAmp2jcVkysejEgcF_V35O3FD5hzkfIQRiEaU')
+bot.run('TOKEN')
