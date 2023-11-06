@@ -9,9 +9,9 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-ROLE_ID = '1136522954105163816'
+ROLE_ID = '1171113887865765968'
 CHANNEL_ID = int('1134168460214153238')
-MESSAGE_ID = int('1138679451425706096')
+MESSAGE_ID = int('1171116141792477186')
 REACTION_EMOJI = '✅'
 
 @bot.event
@@ -35,3 +35,4 @@ async def on_raw_reaction_add(payload):
       
 my_secret = os.environ['TOKEN']
 bot.run(my_secret)
+
